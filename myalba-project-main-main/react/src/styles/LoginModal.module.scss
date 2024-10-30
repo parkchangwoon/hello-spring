@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .mainBanner {
+    display: block;
+    font-size: 30px;
+  }
+
+  span {
+    font-family: "넥슨고딕";
+  }
+
+  .loginModalContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+    padding: 10px;
+
+    input {
+      padding: 5px;
+    }
+
+    button {
+      padding: 5px;
+      border: 1px solid black;
+    }
+
+    p {
+      color: red;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    span {
+      text-align: center;
+      font-family: "넥슨고딕볼드";
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

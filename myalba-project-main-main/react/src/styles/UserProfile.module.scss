@@ -1,0 +1,54 @@
+.container {
+  border: 1px solid black;
+  border-radius: 8px;
+
+  .userInfoContainer {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid black;
+
+    .left {
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      span {
+        margin: 5px;
+
+        .bold {
+          font-family: "넥슨고딕볼드";
+        }
+      }
+
+      .buttonContainer {
+        button {
+          margin: 5px;
+        }
+      }
+    }
+  }
+
+  .boardContainer {
+    padding: 10px;
+
+    .header {
+      span {
+        font-size: 20px;
+        font-family: "넥슨고딕볼드";
+      }
+    }
+
+    .body {
+      thead {
+        font-family: "넥슨고딕볼드";
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 8px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+
+    .left {
+      span {
+        margin-right: 5px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: lightgray;
+        }
+      }
+
+      .errorMessage {
+        font-size: 10px;
+        color: red;
+        display: inline;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .body {
+    padding: 10px;
+    border-bottom: 1px solid black;
+
+    .contentImage {
+      width: 500px;
+      height: 500px;
+      object-fit: contain;
+    }
+
+    .imageContainer {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      img {
+        width: 40px;
+        border: 1px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+          background-color: lightgray;
+        }
+      }
+    }
+  }
+
+  .commentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .commentInputContainer {
+      display: flex;
+      margin: 10px;
+
+      textarea {
+        width: 500px;
+        height: 80px;
+      }
+
+      button {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    p {
+      color: red;
+      font-size: 13px;
+      margin-top: 13px;
+    }
+
+    .comment {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid lightgray;
+      width: 580px;
+      margin-bottom: 10px;
+      padding: 10px;
+
+      .left {
+        span {
+          margin: 5px;
+        }
+
+        .content {
+          display: block;
+        }
+
+        .date {
+          font-size: 13px;
+        }
+
+        .reply {
+          font-size: 13px;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: flex-end;
+
+        button {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

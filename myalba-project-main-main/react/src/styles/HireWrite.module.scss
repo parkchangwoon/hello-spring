@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+
+  textarea {
+    height: 300px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    gap: 5px;
+  }
+}

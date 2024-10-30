@@ -1,0 +1,114 @@
+.container {
+  border: 1px solid black;
+  border-radius: 8px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+    span {
+      font-size: 20px;
+      font-family: "넥슨고딕볼드";
+    }
+
+    .inputContainer {
+      display: flex;
+
+      input {
+        width: 550px;
+      }
+    }
+
+    .buttonContainer {
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    .postContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      margin: 10px;
+      width: 559px;
+      cursor: pointer;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-family: "넥슨고딕볼드";
+          padding: 10px;
+
+          .author {
+            font-family: "넥슨고딕";
+          }
+        }
+
+        .content {
+          padding: 20px 10px;
+          font-size: 13px;
+        }
+
+        .etc {
+          font-size: 13px;
+          padding: 0 0 10px 10px;
+
+          img {
+            width: 25px;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          border: 1px solid lightgray;
+          width: 100px;
+          height: 100px;
+          margin-right: 20px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  background: white;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}

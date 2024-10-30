@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 75px;
+  z-index: 2;
+  border: 1px solid black;
+
+  .boards {
+    margin-top: 5px;
+    text-align: center;
+
+    .boardTitle {
+      font-family: "넥슨고딕볼드";
+      pointer-events: none;
+    }
+
+    span {
+      display: block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .brandContainer {
+    text-align: center;
+    margin: 10px;
+
+    .category {
+      font-family: "넥슨고딕볼드";
+      pointer-events: none;
+    }
+
+    .brand {
+      display: block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

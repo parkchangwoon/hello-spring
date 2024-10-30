@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  .left {
+    .mainBanner {
+      display: block;
+      font-size: 30px;
+    }
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .userNickname {
+      font-family: "넥슨고딕볼드";
+    }
+  }
+}

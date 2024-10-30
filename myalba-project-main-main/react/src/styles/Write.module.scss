@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+
+  .title {
+    padding: 10px;
+    border: 1px solid lightgray;
+  }
+
+  .reactQuillContainer {
+    .reactQuill {
+      height: 400px;
+    }
+  }
+
+  .file {
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin-top: 45px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    gap: 10px;
+  }
+
+  .errorMessage {
+    font-size: 13px;
+    color: red;
+    margin-top: 10px;
+  }
+}

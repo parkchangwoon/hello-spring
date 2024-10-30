@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+
+  .mainBanner {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    margin: 10px;
+    padding-top: 10px;
+    gap: 10px;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    button {
+      border: none;
+      width: 100%;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .employeeButton {
+      background-color: #faeb78;
+    }
+
+    .bossButton {
+      background-color: skyblue;
+    }
+  }
+}
